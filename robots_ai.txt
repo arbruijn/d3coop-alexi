@@ -1,0 +1,46 @@
+
+You may want to play with AI of robots.
+Co-op mod gives some partial access at those variables in a structure of an object.
+Few commands for that do exist.
+Short versions of those commands are mentioned inside of parentheses
+
+
+
+For example, you may wish to create a bot, which normally is an enemy, but so that it would be friendly.
+
+Set your shield to a high value, otherwise that robo may destroy you, while you will do next operations :
+$playershield 0 10000
+($ps)
+
+Spawn the robot object ahead of you :
+$spawninfront <objid>
+($sif)
+(object ids you may find in "objects.h")
+Lets say :  390, 486, 487 for yellow lasers, vauss, md mercenaries, or 640 for the flying ally machine gun, or 284 for superthief.
+When the object will be spawned, you must remember its index, and use it later to make any updates to it.
+
+Rise object shields, so that it wouldn't be easily destroyable :
+$objectshield <objix> 10000
+($os)
+
+If it is Superthief, you probably want to give him some strong weapon.
+Activate that weapon at yourself (spawn it for yourself, if you don't have).
+Turn the back side to the thief and let it to take it.
+Go away.
+
+Make it ally :
+$ObjectAIFlagRebel <objix> 1
+($oaifr)
+
+Now maybe want to try other $OAIxx commands.
+Particularly $ObjectAIType ($oait), to change the main behaviour - movement.
+
+Normalize your shield, if necessary :
+$PlayerShieldNormalize 0
+($psn)
+
+
+
+*commands are inconvenient, I know.
+The objid should be set in some global variable and then reused, rather than entered each time again and again.
+

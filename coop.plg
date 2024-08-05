@@ -1,0 +1,94 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: coop - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\win\AppData\Local\Temp\RSPCC40.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /I "." /I "../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "COOP_EXPORTS" /D "_CRT_SECURE_NO_DEPRECATE" /D "__OSIRIS_IMPORT_H_" /FAcs /Fa"Release/" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\src\d3sdk\src\coop\chat.cpp"
+"E:\src\d3sdk\src\coop\cmd.cpp"
+"E:\src\d3sdk\src\coop\cmd_show.cpp"
+"E:\src\d3sdk\src\coop\commands.cpp"
+"E:\src\d3sdk\src\coop\control.cpp"
+"E:\src\d3sdk\src\coop\coop.cpp"
+"E:\src\d3sdk\src\coop\coop_mod.cpp"
+"E:\src\d3sdk\src\coop\coop_mod_cmd.cpp"
+"E:\src\d3sdk\src\coop\drop.cpp"
+"E:\src\d3sdk\src\coop\exceptions.cpp"
+"E:\src\d3sdk\src\coop\game_utils.cpp"
+"E:\src\d3sdk\src\coop\hooks.cpp"
+"E:\src\d3sdk\src\coop\inventory.cpp"
+"E:\src\d3sdk\src\coop\log_file.cpp"
+"E:\src\d3sdk\src\coop\missions.cpp"
+"E:\src\d3sdk\src\coop\packet.cpp"
+"E:\src\d3sdk\src\coop\powerups.cpp"
+"E:\src\d3sdk\src\coop\rooms.cpp"
+]
+Creating command line "cl.exe @C:\Users\win\AppData\Local\Temp\RSPCC40.tmp" 
+Creating temporary file "C:\Users\win\AppData\Local\Temp\RSPCC41.tmp" with contents
+[
+..\..\lib\dmfc.lib kernel32.lib user32.lib gdi32.lib winmm.lib imagehlp.lib ws2_32.lib /nologo /dll /incremental:no /pdb:"Release/co-op.pdb" /map:"Release/co-op.map" /debug /machine:I386 /out:"Release/co-op.dll" /implib:"Release/co-op.lib" 
+.\Release\chat.obj
+.\Release\cmd.obj
+.\Release\cmd_show.obj
+.\Release\commands.obj
+.\Release\control.obj
+.\Release\coop.obj
+.\Release\coop_mod.obj
+.\Release\coop_mod_cmd.obj
+.\Release\dallas.obj
+.\Release\drop.obj
+.\Release\error.obj
+.\Release\exceptions.obj
+.\Release\game_utils.obj
+.\Release\geoip.obj
+.\Release\hooks.obj
+.\Release\image.obj
+.\Release\inventory.obj
+.\Release\log_file.obj
+.\Release\missions.obj
+.\Release\nicks.obj
+.\Release\packet.obj
+.\Release\patches.obj
+.\Release\powerups.obj
+.\Release\rooms.obj
+.\Release\screen.obj
+.\Release\script.obj
+.\Release\utils.obj
+]
+Creating command line "link.exe @C:\Users\win\AppData\Local\Temp\RSPCC41.tmp"
+<h3>Output Window</h3>
+Compiling...
+chat.cpp
+cmd.cpp
+cmd_show.cpp
+commands.cpp
+control.cpp
+coop.cpp
+coop_mod.cpp
+coop_mod_cmd.cpp
+drop.cpp
+exceptions.cpp
+game_utils.cpp
+hooks.cpp
+inventory.cpp
+log_file.cpp
+missions.cpp
+packet.cpp
+powerups.cpp
+rooms.cpp
+Generating Code...
+Linking...
+   Creating library Release/co-op.lib and object Release/co-op.exp
+
+
+
+<h3>Results</h3>
+co-op.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

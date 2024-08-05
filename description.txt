@@ -1,0 +1,49 @@
+	2006-03-10 - 2014-12-27
+	by Alexander Ilyin
+
+
+
+From ~2006-03 until 2006-07-28 the project was absolutely stuck, cause no any ways I was able to find for sending a warning or other info messages to players (clients).
+In the beginning in the base were used few small important parts of "assault" mod source code.
+
+Here are files, containing source code of modified Co-op Descent 3 game.
+Many of subroutines here, must not be on the game mod level, but ... they are.
+Whatever you do, make a backup copy of the original "Co-op.d3m" first, for example in ".\netgames\backup" folder.
+
+
+
+// ----------------------------- DLL usage ways -----------------------------
+
+To use it, you have to go by one of two ways :
+1) Place "co-op.dll" and "coop.str" into "co-op.d3m" HOG2 pack.
+2) Copy "co-op.dll" directly, naming it "co-op.d3m", and place "coop.str" to a reachable for D3 directory (not ".\netgames"), it may be the game root directory.
+*game with such modification (made by the second way, but not by the first way) can't join co-op network games sometimes :(,
+and original "co-op.d3m" will not work when "coop.str" replacement is accessible.
+*to be able to debug it with MSVC 6.0 :
+Project -> Settings... -> Link -> General -> Output file name:
+change from "co-op.dll" to "co-op.d3m", then MSVC will get exceptions from our dll correctly.
+*in MSVC 6.0, if just copy the compiled .dll to netgames and name it .d3m, then MSVC will not activate an already been set breakpoints; exceptions and newly set breakpoints do work.
+*in any case - "coop.str" will be necessary mandatory.
+
+
+
+// ----------------------------- other -----------------------------
+
+*I've tried to leave "coop.cpp" without modifications as much as possible, so it is almost not remade "anarchy.cpp",
+that would be possible to compare "coop.cpp" with "anarchy.cpp".
+Well, at least the main blocks of that file are not modified.
+It appears that the own config file isn't strongly needed if use D3Server Tool, cause it has autocommand;
+maybe would be good to implement it for the otherwise case, but it is possible to use "autoexec.dmfc" file in netgames directory with settings :
+"TeamDamage 0" and "sleep 20" for example.
+
+Linux :
+Some porting work was done by Cent; incomplete though, but should work somehow.
+*that shall be very outdated for the current version. 
+
+*from version a0 the chat logging is off by default.
+*this info wouldn't be here, if EU laws wouldn't require to inform a user about logging.
+Further look about logging in "usage.txt".
+
+
+
+

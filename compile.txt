@@ -1,0 +1,21 @@
+
+Tested on :
+MSVC 1998,
+MSVC 2005,
+MSVC 2008.
+
+To compile it you need D3SDK v1.4
+Create folder "coop_m" inside D3SDK along with "anarchy" and "entropy" folders.
+Decompress contain of one of the zips, into it.
+Open the "coop.dsw" workspace, using MSVC 6.0 or 8.0 or 9.0.
+Revise the linker settings in tab; it gives "co-op.dll" or "co-op.d3m", depending on needs.
+Revise Custom Build step settings; it does copy the compiled file into some folder after linking.
+Compile it :)
+
+Beginning from version a7, D3 SDK v1.4 cannot be used without a modification, to compile this.
+typedef vector vec;
+This line needs to be added after 'vector' structure declaration in "vecmat_external.h".
+It is because I would very dislike to type 'std::' each time, to avoid 'vector' identifier conflicts, getting "error C2872: 'vector' : ambiguous symbol".
+
+
+

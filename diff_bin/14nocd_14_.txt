@@ -1,0 +1,101 @@
+granularity 00000040 min 00010000 max, align 00000010
+
+area size 00010980, end offset 00010980
+
+begin offset 00010980, removal 00000020
+area size 000183c0, end offset 00028d40
+
+begin offset 00028d40, removal 00000030
+area size 00000580, end offset 000292c0
+
+begin offset 000292c0, removal 00000040
+area size 00030000, end offset 000592c0
+
+begin offset 000592c0, removal fffffbf0
+area size 00020000, end offset 000792c0
+
+begin offset 000792c0, removal fffffc00
+area size 00010000, end offset 000892c0
+
+begin offset 000892c0, removal fffffc10
+area size 00010040, end offset 00099300
+
+begin offset 00099300, removal fffffbe0
+area size 00007e80, end offset 000a1180
+
+begin offset 000a1180, removal fffffc00
+area size 00030000, end offset 000d1180
+
+begin offset 000d1180, removal fffffc10
+area size 00010000, end offset 000e1180
+
+begin offset 000e1180, removal fffffc00
+area size 00008c80, end offset 000e9e00
+
+begin offset 000e9e00, removal fffffbf0
+area size 00020000, end offset 00109e00
+
+begin offset 00109e00, removal fffffcb0
+area size 00000040, end offset 00109e40
+
+begin offset 00109e40, removal fffffd00
+area size 00023640, end offset 0012d480
+
+begin offset 0012d480, removal fffffcf0
+area size 00030000, end offset 0015d480
+
+begin offset 0015d480, removal fffffcd0
+area size 00003940, end offset 00160dc0
+
+begin offset 00160dc0, removal fffffcc0
+area size 00000600, end offset 001613c0
+
+begin offset 001613c0, removal fffffcb0
+area size 000060c0, end offset 00167480
+
+begin offset 00167480, removal fffffb60
+area size 00005780, end offset 0016cc00
+
+begin offset 0016cc00, removal fffffbc0
+area size 00002f80, end offset 0016fb80
+
+begin offset 0016fb80, removal fffff9d0
+area size 000023c0, end offset 00171f40
+
+begin offset 00171f40, removal fffffa00
+area size 00000440, end offset 00172380
+
+begin offset 00172580, removal fffff9f0
+area size 00004800, end offset 00176d80
+
+begin offset 00176d80, removal fffff9d0
+area size 000076c0, end offset 0017e440
+
+begin offset 0017e440, removal fffffa40
+area size 00002440, end offset 00180880
+
+begin offset 00180880, removal 00006440
+area size 00010000, end offset 00190880
+
+begin offset 00190880, removal 00006460
+area size 00000f40, end offset 001917c0
+
+begin offset 001917c0, removal 00006450
+area size 00001380, end offset 00192b40
+
+begin offset 00192b40, removal 00006470
+area size 00000040, end offset 00192b80
+
+begin offset 00192bc0, removal 00006690
+area size 00005640, end offset 00198200
+
+begin offset 00198200, removal 00006060
+area size 00000040, end offset 00198240
+
+begin offset 00198240, removal 00006050
+area size 00007880, end offset 0019fac0
+
+begin offset 0019fac0, removal 00006000
+area size 000115c0, end offset 001b1080
+
+begin offset 001b1080, removal 00006d90

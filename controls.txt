@@ -1,0 +1,6 @@
+
+Controls currently are hardcoded to Shift + U, I, O, P, J, K, L, '.' keys.
+
+Note, that to prevent a weapon reloading bugs, drop weapon function is not allowing to drop any ammo using weapons if they have less ammo than normally this weapon gives, when is taken.
+It also can give bugs with ammo amount for vauss and napalm, since the engine isn't counting ammo for those weapons on the server side and a separate server-side counter has been added into the mod.
+

@@ -1,0 +1,50 @@
+
+
+// ----------------------------- Nicks -----------------------------
+
+To avoid chat flood, mod does not let to join clients with some nick names.
+By default :  2 spaces are maximum allowed.
+To change that, in "autoexec.dmfc" write line :
+NickSpacesMax x
+
+
+// ----------------------------- GeoIP -----------------------------
+
+If you would like to see GeoIP country results about a new connected player, go to MaxMind's site, and download a recent "GeoIP.dat", unzip it and put it into the main D3 folder.
+There are versions for purchase, and along them also goes a free one, that one is named GeoLite Country; binary format.
+By my experience I could say, that it needs to be updated once per few months; otherwise it begins to give no or wrong results.
+
+
+
+// ----------------------------- Exceptions -----------------------------
+
+In case if you using Descent 3 V1.4, some crashing places in the engine are known for the coop mod, and you may let the mod to attempt to prevent such crash, what sometimes works.
+To allow that, in "autoexec.dmfc" write line :
+exceptions 1
+
+
+
+// ----------------------------- User commands -----------------------------
+
+Mod also supports some user commands; users can send their commands, writing in their chat a command, beginning with '/' symbol.
+Examples :
+/help - for the full list of commands
+/version or /ver
+/DropShield or /ds
+
+
+
+// ----------------------------- logging -----------------------------
+
+The mod has two loggings :  connections logging and chat logging.
+Logging of connections is on, and can be turned off by :  LogConnections 0
+Logging of chat is off, and can be turned on by :  LogChat 1
+Settings should be put in "autoexec.dmfc".
+To see is the logging on or off, a user may write "/log", and the server will reply.
+
+
+
+// ----------------------------- Other -----------------------------
+
+File "autoexec.dmfc" needs to be (created and) placed in ".\netgames" directory.
+
